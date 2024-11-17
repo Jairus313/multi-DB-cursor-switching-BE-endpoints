@@ -4,6 +4,7 @@ from app.core.config import DBConfig
 
 
 engine = create_engine(DBConfig.database_url)
+print(DBConfig.database_url)
 MasterSession = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 

@@ -1,8 +1,8 @@
 from sqlalchemy import Column, String
-from app.db.base import Base
+from app.db.base import base
 
 
-class User(Base):
+class User(base):
     __tablename__ = "user_table"
 
     user_name = Column(String, primary_key=True)
